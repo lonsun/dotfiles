@@ -33,4 +33,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 [ -f /Users/lon/.travis/travis.sh ] && source /Users/lon/.travis/travis.sh
 
 # spoton
-export PATH="/Users/lon/code/spoton/scripts:$PATH"
+. /Users/lon/code/spoton/scripts/spoton_deploy_env.sh
