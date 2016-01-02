@@ -13,11 +13,14 @@ set quotes "You don't worry about Planet Express, let me worry about blank." "In
 "It was a regulation date that ended in regulation dissapointment"
 
 function fish_greeting
-  # pick a random quote
+  # pick a random quote...
   set cnt (count $quotes)
   set random_idx_cmd awk "'BEGIN { srand(); printf(\"%d\n\",rand()*"$cnt") }'"
   set idx (eval $random_idx_cmd)
-  echo $quotes[(math "$idx+1")]
+
+  # ...and output in white font
+  set_color "white"
+  echo -e "\n"$quotes[(math "$idx+1")]"\n"
 end
 
 
