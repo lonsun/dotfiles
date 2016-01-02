@@ -1,5 +1,10 @@
+#            #
 ### Global ###
+#            #
+
+# Environment Vars
 set -g -x PATH /usr/local/bin $PATH
+
 
 # Fish Greeting
 set quotes "You don't worry about Planet Express, let me worry about blank." "Insane theories one, regular theories a billion." \
@@ -15,13 +20,19 @@ function fish_greeting
   echo $quotes[(math "$idx+1")]
 end
 
+
+# Aliases
 alias rm 'rm -i'
 alias vi 'mvim'
 
+## Postgres (installed via homebrew)
+alias start_pg 'pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'
+alias stop_pg 'pg_ctl -D /usr/local/var/postgres/ stop -s -m fast'
+
+
+#               #
 ### CPAY Work ###
+#               #
+
+# mainly for phpunit executable so I don't have to install it globally
 set -g -x PATH ~/code/cpay/forte/vendor/bin $PATH
-
-
-# Postgres (installed via homebrew)
-alias pg_start 'pg_ctl -D /usr/local/var/postgres/ -l /usr/local/var/postgres/server.log start'
-alias pg_stop 'pg_ctl -D /usr/local/var/postgres/ stop -s -m fast'
