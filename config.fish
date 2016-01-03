@@ -20,7 +20,7 @@ function fish_greeting
 
   # ...and output in white font
   set_color "white"
-  echo -e "\n"$quotes[(math "$idx+1")]"\n"
+  echo -e "\n"\"$quotes[(math "$idx+1")]"\"\n"
 end
 
 
