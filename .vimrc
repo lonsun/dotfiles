@@ -70,3 +70,6 @@ nnoremap <C-w>J :autocmd! CursorMoved *<CR>
 " save.  See http://www.vim.org/scripts/script.php?script_id=3967 for details.
 let g:DeleteTrailingWhitespace = 1
 let g:DeleteTrailingWhitespace_Action = 'delete'
+
+" Four space tabs on php files.
+autocmd FileType php setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
