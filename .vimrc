@@ -1,6 +1,8 @@
 " Pathogen plugin manager
 execute pathogen#infect()
 
+set shell=/usr/local/bin/fish
+
 " Use 2 spaces for tabs
 :set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
