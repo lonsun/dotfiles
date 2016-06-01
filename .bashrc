@@ -17,10 +17,12 @@ alias rm='rm -i'
 alias updatedb='/usr/libexec/locate.updatedb'
 alias vi='mvim'
 
-# bash completion (brew)
+# bash completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+complete -C aws_completer aws
 
 # Servers/Services
 alias start_pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
