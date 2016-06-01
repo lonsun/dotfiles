@@ -10,7 +10,8 @@ set -g -x PATH /usr/local/bin $PATH
 set quotes "You don't worry about Planet Express, let me worry about blank." "Insane theories one, regular theories a billion." \
 "Sweet zombie Jesus!" "60% of the time, it works everytime." \
 "[The city is being attacked by Lucy Liu robots] Now there’s a wave of destruction that’s easy on the eyes" "What is that, velvet?" \
-"It was a regulation date that ended in regulation dissapointment"
+"It was a regulation date that ended in regulation dissapointment" \
+"[The court orders Bart to be emancipated and for Homer's wages to be garnished.] Mmmm...garnish."
 
 function fish_greeting
   # pick a random quote...
@@ -39,10 +40,3 @@ alias stop_pg95 'pg_ctl -D /usr/local/var/postgres-9.5/ stop -s -m fast'
 ### SpotOn Work ###
 #                 #
 . ~/code/spoton/scripts/spoton_funcs.fish
-
-#               #
-### CPAY Work ###
-#               #
-
-# mainly for phpunit executable so I don't have to install it globally
-set -g -x PATH ~/code/cpay/forte/vendor/bin $PATH
