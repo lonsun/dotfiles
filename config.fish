@@ -35,6 +35,8 @@ alias stop_pg 'pg_ctl -D /usr/local/var/postgres/ stop -s -m fast'
 alias start_pg95 'pg_ctl -D /usr/local/var/postgres-9.5/ -l /usr/local/var/postgres/server.log start'
 alias stop_pg95 'pg_ctl -D /usr/local/var/postgres-9.5/ stop -s -m fast'
 
+# iTerm2 shell integration
+source ~/.iterm2_shell_integration.fish
 
 #                 #
 ### SpotOn Work ###
