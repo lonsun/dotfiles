@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": 0,
+    "python.venvPath": "~/.virtualenvs",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "files.trimTrailingWhitespace": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "extensions.ignoreRecommdendations": false,
+    "terminal.integrated.scrollback": 10000,
+    "terminal.integrated.fontFamily": "Menlo",
+    "[makefile]": {
+        "editor.insertSpaces": false
+    }
+}
