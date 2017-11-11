@@ -4,6 +4,9 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "vim.disableAnnoyingNeovimMessage": true,
     "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.html": "ejs"
+    },
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "extensions.ignoreRecommdendations": false,
